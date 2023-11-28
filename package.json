@@ -10,6 +10,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:fix": "nr lint --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
@@ -18,10 +19,13 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@antfu/ni": "^0.21.12",
     "@rushstack/eslint-patch": "^1.6.0",
     "@tsconfig/node18": "^18.2.2",
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/eslint-config-prettier": "^8.0.0",
