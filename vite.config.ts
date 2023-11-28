@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from "node:url";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
@@ -13,6 +14,7 @@ export default defineConfig({
     vue(),
     vueJsx(),
     Pages(),
+    UnoCSS(),
     AutoImport({
       vueTemplate: true,
       dirs: ["./src/composables"],
